@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+margin: 0px;
+box-sizing: border-box;
+padding: 0px;
+}
+
+/* Declaracion de variables */
+:root{
+    --color-azul: #004ba5;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --familia-fuente: 'Roboto', sans-serif;
+    --shadow: #333 0px 0px 20px;
+}
+
+.menu{
+    width: 80%;
+    height: 200px;
+    background-color: var(--color-blanco);
+    margin: 40px auto 0px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+.menu__titulo{
+    width: 50%;
+}
+
+.menu__titulo h2{
+    font-family: var(--familia-fuente);
+    font-size: 2.5rem;    
+    padding-left: 15px;
+    font-weight: 500;
+    color: var(--color-azul);
+}
+
+.menu__datos{
+    width: 25%;
+}
+
+.menu__datos ul li{
+    font-family: var(--familia-fuente);
+    margin: 25px 0;
+    color: var(--color-negro);
+}
+
+.menu__botones{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton__cita{
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-blanco);
+    font-family: var(--familia-fuente);
+    font-size: 1rem;
+    background-color: var(--color-azul);
+    transition: all 0.3s linear;
+}
+
+.boton__cita:hover{
+    color: var(--color-azul);
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-azul);
+}
+
+.submenu{
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--color-azul);
+    box-shadow: var(--shadow);
+    position: relative;
+    top: -30px;
+}
+
+.main__background{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./img/inicial.jpg");;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
