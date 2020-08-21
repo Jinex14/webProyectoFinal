@@ -13,6 +13,7 @@ padding: 0px;
     --color-negro: #000;
     --familia-fuente: 'Roboto', sans-serif;
     --shadow: #333 0px 0px 20px;
+    --colo-hover: #003d88;
 }
 
 .menu{
@@ -80,7 +81,8 @@ padding: 0px;
     background-color: var(--color-azul);
     box-shadow: var(--shadow);
     position: relative;
-    top: -30px;
+    top: -30px; 
+    overflow: hidden;
 }
 
 .main__background{
@@ -89,4 +91,32 @@ padding: 0px;
     background-image: url("./img/inicial.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    /* position: absolute;
+    top: 0;
+    z-index: -1; */
+}
+
+.submenu__lista{
+    flex: 1;
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+
+.submenu__item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    transition: all 0.2s ease-in;
+    font-weight: 400;
+    font-family: var(--familia-fuente);
+    font-size: 1.4rem;
+    
+}
+
+.submenu__item:hover{
+    background-color: var(--colo-hover);
+    
 }
